@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="canvas">#FF404040</color>
+    <color name="bar">#C0202020</color>
+    <color name="head_bg">#ADD8E600</color>
+    <color name="touming">#00000000</color>
+    <color name="show_title_black">#404040</color>
+    <color name="show_title_red">#8B1A1A</color>
+    <color name="show_title_cyan">#68ADB1</color>
+    <color name="actionbar_separator">#8B1A1A</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="actionbar_background_start">#8B1A1A</color>
+    <color name="actionbar_background_end">#CD2626</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+    <color name="excel_header">#ADD8E6</color>
+    <color name="my_view">#00000000</color>
+    <color name="region">#8000ff00</color>
+    <color name="listTitle">#ff23323b</color>
+    <color name="text">#ff848f9b</color>
+    <color name="write">#ffffffff</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_divider">#CFCFCF</color>
+
+</resources>

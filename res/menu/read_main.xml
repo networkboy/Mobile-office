@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/main_menu_share"
+        android:title="分享"/>
+    <item
+        android:id="@+id/main_menu_changeskin"
+        android:title="换肤"/>
+    <item
+        android:id="@+id/main_menu_about"
+        android:title="关于"/>
+    <item
+        android:id="@+id/main_menu_exit"
+        android:title="退出"/>
+
+</menu>

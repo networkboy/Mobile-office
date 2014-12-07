@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/land_mail_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/land_mail_home_back"
+            style="@style/ActionBarHomeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:src="@drawable/ic_title_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_toRightOf="@id/land_mail_home_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="登录邮箱          "
+            android:textColor="#F8F8F8"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/roundback"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/id_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="账 号"
+            android:textColor="#D0D0D0"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#D8D8D8" />
+
+        <EditText
+            android:id="@+id/code_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="密码"
+            android:textColor="#D0D0D0"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/land_chex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:checked="true"
+        android:text="记住密码" />
+
+    <Button
+        android:id="@+id/land_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_id_bg"
+        android:textColor="#B0B0B0"
+        android:textSize="24sp"
+        android:text="下一步" />
+
+</LinearLayout>

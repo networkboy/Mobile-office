@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/read_set_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/read_set_home_back"
+            style="@style/ActionBarHomeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:src="@drawable/ic_title_home" />
+
+        <TextView
+            android:id="@+id/read_set_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_toRightOf="@id/read_set_home_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="偏好设置         "
+            android:textColor="#F8F8F8"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E8E8E8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="搜索文件"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundback"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:gravity="left|center_vertical"
+                        android:text="显示Word文件"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/read_set_list_btn_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/send_btnbg"
+                        android:paddingRight="5dp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#C0C0C0" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:gravity="left|center_vertical"
+                        android:text="显示Excel文件"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/read_set_list_btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/send_btnbg"
+                        android:paddingRight="5dp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#C0C0C0" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:gravity="left|center_vertical"
+                        android:text="显示PDF文件"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/read_set_list_btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/send_btnbg"
+                        android:paddingRight="5dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundback"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_divider"
+                android:dividerHeight="0.1dp"
+                android:listSelector="@color/transparent" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/list3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundback"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

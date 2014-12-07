@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFCC"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/read_search_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/read_search_home_back"
+            style="@style/ActionBarHomeLogo"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/ic_title_home" />
+
+        <TextView
+            android:id="@+id/read_search_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_toRightOf="@id/read_search_home_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="搜索文件        "
+            android:textColor="#F8F8F8"
+            android:textSize="20sp" />
+
+       <!--   <Button
+            android:id="@+id/read_search_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/send_btnbg"
+            android:gravity="center"
+            android:text="设置" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/read_search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/roundback"
+            android:padding="2dp" />
+
+        <ImageButton
+            android:id="@+id/read_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:src="@drawable/search_btn_bg" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/read_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line" />
+
+</LinearLayout>

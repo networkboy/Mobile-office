@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/read_show_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/read_show_homeBtn"
+            style="@style/ActionBarHomeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:src="@drawable/ic_title_home" />
+
+        <TextView
+            android:id="@+id/read_show_file_name"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_toRightOf="@id/read_show_homeBtn"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:singleLine="true"
+            android:textColor="#F8F8F8"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/read_show_toscreenshortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/send_btnbg"
+            android:gravity="center"
+            android:text="截图"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/read_show_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+
+        <EditText
+            android:id="@+id/read_word_show_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/read_show_screenshortbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/screenshot_btnbg"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/read_show_screenshort_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_margin="18dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/read_show_screenshort_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:src="@drawable/screenshort_cancel_btn" />
+
+            <ImageButton
+                android:id="@+id/read_show_screenshort_ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/screenshort_ok_btn" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

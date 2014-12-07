@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0">
+
+    <ImageView
+        android:id="@+id/email_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp" 
+        android:paddingTop="24px"
+        android:paddingBottom="16px"
+        android:layout_gravity="left"/>
+    <ImageView
+        android:id="@+id/email_datad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/email_right_arrow"/>
+</FrameLayout>

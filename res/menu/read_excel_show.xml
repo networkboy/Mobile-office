@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/excel_show_menu_about_file"
+        android:title="关于文件"/>
+    <item
+        android:id="@+id/excel_show_menu_send_file"
+        android:title="发送文件"/>
+    <item
+        android:id="@+id/excel_show_menu_share"
+        android:title="分享文件"/>
+    <item
+        android:id="@+id/excel_show_menu_night"
+        android:title="夜间模式"/>
+    <item
+        android:id="@+id/excel_show_menu_exit"
+        android:title="退出"/>
+</menu>

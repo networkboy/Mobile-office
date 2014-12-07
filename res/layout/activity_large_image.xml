@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ff888888" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636"
+            android:padding="8dp"
+            android:layout_gravity="bottom" >
+
+            <Button
+                android:id="@+id/large_image_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/pic_delete_bg"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="删除图片"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

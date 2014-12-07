@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/pdf_show_about_file"
+        android:title="关于文件"/>
+    <item
+        android:id="@+id/pdf_show_send_file"
+        android:title="发送文件"/>
+    <item
+        android:id="@+id/pdf_show_share"
+        android:title="分享文件"/>
+    <item
+        android:id="@+id/pdf_show_exit"
+        android:title="退出"/>
+
+</menu>

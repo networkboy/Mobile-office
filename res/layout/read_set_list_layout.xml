@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp">
+
+    <TextView
+        android:id="@+id/read_set_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:textColor="#606060"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/read_set_list_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingRight="5dp"
+        android:background="@null"
+        android:src="@drawable/switch_on" />
+
+</FrameLayout>

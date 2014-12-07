@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/utf8"
+        android:title="code_utf8"/>
+    <item
+        android:id="@+id/gb2312"
+
+        android:title="code_gb2312"/>
+    <item
+        android:id="@+id/about"
+        android:title="about"/>
+
+</menu>

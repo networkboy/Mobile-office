@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/preview_image_edit_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#ff000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/preview_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/send_btnbg"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="转换" />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PDF转换"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/preview_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/send_btnbg"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="编辑"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="0dip"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dip" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/send_mail_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/send_mail_home_back"
+            style="@style/ActionBarHomeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:src="@drawable/ic_title_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_toRightOf="@id/send_mail_home_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="发送邮件"
+            android:textColor="#F8F8F8"
+            android:textSize="20sp" />
+       
+        <Button
+            android:id="@+id/send_mail_sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/send_btnbg"
+            android:gravity="center"
+            android:text="发 送" />
+    </RelativeLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099FF"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <ImageButton
+            android:id="@+id/to_send_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_toRightOf="@id/file_name"
+            android:background="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundback"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/address_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="收件人"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#C0C0C0" />
+
+        <EditText
+            android:id="@+id/theme_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="主题"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#D8D8D8" >
+
+        <ImageView
+            android:id="@+id/mfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/mail_file_icon" />
+
+        <TextView
+            android:id="@+id/tosends_file"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/mfile"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tosends_file_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tosends_file"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/mfile"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundback"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/word_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="160sp"
+            android:background="@null"
+            android:gravity="top"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
